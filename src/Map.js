@@ -15,7 +15,7 @@ function Map() {
     loader.load().then(() => {
       const map = new window.google.maps.Map(document.getElementById("map"), {
         center: { lat: 40.37187861700456, lng: 49.84984665559048 },
-        zoom: 12,
+        zoom: 14,
       });
 
       setMap(map);
@@ -69,9 +69,12 @@ function Map() {
   }, []);
 
   return (
+    <>
     <div id="map" style={{ height: "800px", width: "100%" }}>
       {/* Map container */}
     </div>
+    </>
+    
   );
 }
 
