@@ -15,7 +15,7 @@ function Map() {
     loader.load().then(() => {
       const map = new window.google.maps.Map(document.getElementById("map"), {
         center: { lat: 40.37187861700456, lng: 49.84984665559048 },
-        zoom: 13,
+        zoom: 14,
       });
 
       setMap(map);
